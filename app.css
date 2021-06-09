@@ -1,0 +1,373 @@
+:root {
+  --tldr-black: #343641;
+  --tldr-green: #06d6a0;
+  --tldr-red: #ef476f;
+  --tldr-yellow: #ffc43d;
+  --tldr-lightyellow: #f8ffe5;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.height100 {
+  height: 100%;
+}
+
+.content-wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 44px auto;
+}
+
+.top-navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--tldr-green);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 10;
+}
+
+.paper-list {
+  height: 44px;
+  width: 400px;
+  padding: 8px;
+  margin: 0px auto;
+}
+
+.paper-list div {
+  height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 28px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.document-content {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto 425px;
+}
+
+.section-wrapper {
+  margin-bottom: 40px;
+}
+
+.paragraph-wrapper {
+  margin-bottom: 32px;
+}
+
+.visual-desc {
+  font-style: italic;
+  font-size: 20px;
+}
+
+.card-container {
+  position: sticky;
+  margin-top: 17px;
+  margin-left: 17px;
+  margin-right: 17px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+}
+
+.card-top {
+  display: grid;
+  grid-template-columns: auto 30px;
+  background-color: var(--tldr-green);
+  border-radius: 16px 16px 0px 0px;
+  text-align: center;
+  height: 40px;
+}
+
+.close-btn {
+  display: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  background-color: #ef476f;
+  border-radius: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.close-btn img {
+  width: 14px;
+  height: 14px;
+  transform: rotate(45deg);
+  margin-bottom: 8px;
+}
+
+.card-top h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 40px;
+}
+
+.card-content {
+  padding: 17px;
+  padding-right: 34px;
+  height: 320px;
+  background-color: #ffffff;
+  margin-bottom: 4px;
+  max-height: 320px;
+  text-align: justify;
+  word-break: break-all;
+  overflow: scroll;
+}
+
+.card-edit {
+  padding-right: 34px;
+  height: 16px;
+  text-align: right;
+  margin-bottom: 4px;
+}
+
+.edit-btn {
+  display: inline-block;
+  width: 36px;
+  font-size: 12px;
+  color: whitesmoke;
+  padding: 2px 6px;
+  line-height: 16px;
+  background-color: var(--tldr-red);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.tkn-div {
+  display: inline-block;
+  margin: 1px 2px;
+}
+
+.tkn-div:hover {
+  border: 1px solid gray;
+}
+
+.synonym-container {
+  position: absolute;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--tldr-lightyellow);
+  border-radius: 4px;
+  padding: 1px 2px;
+  vertical-align: middle;
+  line-height: 12px;
+  z-index: 10;
+}
+
+.synonym {
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 3px;
+  text-overflow: ellipsis;
+}
+
+.synonym:hover {
+  border: 1px solid gray;
+}
+
+.card-bottom {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  padding: 0 17px;
+}
+
+.card-bottom label {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.card-bottom p {
+  margin-bottom: 0;
+}
+
+.model-list-container {
+  display: grid;
+  grid-template-columns: 48px auto;
+  height: 40px;
+}
+
+.model-wrapper {
+  padding: 8px;
+  line-height: 16px;
+}
+
+.model-wrapper div {
+  width: 75px;
+  text-align: center;
+  border: 1px solid #343641;
+  padding: 4px;
+  background-color: white;
+}
+
+.model-wrapper div {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #343641;
+  padding: 4px;
+}
+
+.length-container {
+  display: grid;
+  height: 40px;
+  grid-template-columns: 52px auto;
+  text-align: center;
+}
+
+.slidebar-wrapper {
+  display: grid;
+  grid-template-rows: auto 16px;
+  height: 100%;
+  text-align: center;
+  padding: 0px 8px;
+  vertical-align: center;
+}
+
+.length-slidebar {
+  width: 120px;
+  height: 24px;
+  margin-left: 5px;
+}
+
+.slidebar-value-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.slidebar-value-wrapper div {
+  height: 16px;
+  margin: 0;
+  line-height: 12px;
+}
+
+.btn-container {
+  position: sticky;
+  height: 40px;
+  width: 40px;
+  margin-top: 17px;
+  margin-left: 180px;
+}
+
+.circle-btn {
+  width: 40px;
+  height: 100%;
+  padding: 6px;
+  border-radius: 50%;
+  line-height: 12px;
+  background: var(--tldr-green);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.popup-container {
+  display: none;
+  position: sticky;
+  margin-top: 17px;
+  margin-right: 17px;
+  margin-left: 17px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffc43d;
+  border-radius: 16px;
+  padding: 16px;
+  font-size: 14px;
+}
+
+.popup-content {
+  display: grid;
+  grid-template-rows: 24px 24px 24px;
+}
+
+.popup-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  line-height: 24px;
+}
+
+.popup-inputs input {
+  height: 20px;
+  width: 40px;
+  margin-left: 8px;
+}
+
+.popup-btns {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.popup-btns div {
+  margin-right: 8px;
+}
+
+#info-container {
+  height: 100vh;
+  box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, 0.2);
+  font-family: "Open Sans", sans-serif;
+  margin-right: 17px;
+  overflow-y: scroll;
+  padding-bottom: 140px;
+}
+
+#paper-container {
+  display: grid;
+  grid-template-columns: 68px auto 68px;
+  font-family: "Lora", serif;
+  margin-top: 140px;
+  font-size: 24px;
+  text-align: justify;
+  overflow-y: scroll;
+  margin-bottom: 140px;
+}
+
+#paper-content {
+  padding-bottom: 355px;
+}
+
+#paper-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#pointer-container {
+  position: fixed;
+  height: 68px;
+  width: 68px;
+  margin-top: 4px;
+  padding-right: 8px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1;
+}
+
+#pointer-container p {
+  margin-top: 4px;
+}
+
+#pointer {
+  width: 40px;
+  height: 40px;
+}
+
+#auto-card {
+  margin-top: 61px;
+}

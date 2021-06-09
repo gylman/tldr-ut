@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Open+Sans:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+            crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>TLDR</title>
+  </head>
+  <body>
+    <div id="page" class="height100">
+      <div class="content-wrapper">
+        <div class="top-navigation">
+          <div class="paper-list">
+            <div>Test</div>
+          </div>
+        </div>
+        <div class="document-content">
+          <div id="paper-container" class="container">
+            <div></div>
+            <div id="pointer-container">
+              <img id="pointer" src="images/arrow.svg" />
+              <p id="pointer-context">Sect: 0 Para: 1</p>
+            </div>
+            <div id="paper-content">
+              <div id="paper-title">
+                <h1>
+                  "Person, Shoes, Tree. Is the Person Naked?" What People with
+                  Vision Impairments Want in Image Descriptions
+                </h1>
+              </div>
+              <div id="s0" class="section-wrapper">
+                <h2>0. Abstract</h2>
+                <div id="s0_p1" class="paragraph-wrapper">
+                  <p>
+                    Access to digital images is important to people who are
+                    blind or have low vision (BLV). Many contemporary image
+                    description efforts do not take into account this
+                    population’s nuanced image description preferences. In this
+                    paper, we present a qualitative study that provides insight
+                    into 28 BLV people’s experiences with descriptions of
+                    digital images from news websites, social networking
+                    sites/platforms, eCommerce websites, employment websites,
+                    online dating websites/platforms, productivity applications,
+                    and e-publications. Our findings reveal how image
+                    description preferences vary based on the source where
+                    digital images are encountered and the surrounding context.
+                    We provide recommendations for the development of
+                    next-generation image description technologies inspired by
+                    our empirical analysis.
+                  </p>
+                </div>
+              </div>
+              <div id="s1" class="section-wrapper">
+                <h2>1. Introduction</h2>
+                <div id="s1_p1" class="paragraph-wrapper">
+                  <p>
+                    Digital images are plentiful across the media and
+                    information landscape. Towards enabling people who are blind
+                    or have low vision (BLV) to consume such content, a variety
+                    of efforts focus on the provision of alternative text (alt
+                    text) that is read through a screen reader. A screen reader
+                    is a software application that enables people who are BLV to
+                    read the text that is displayed on the computer screen with
+                    a speech synthesizer or Braille display. Alt text image
+                    descriptions are read off by a screen reader when a content
+                    author has followed recommended protocol, e.g. [13], and
+                    created an alt text attribute within a document or website’s
+                    source code.
+                  </p>
+                </div>
+                <div id="s1_p2" class="paragraph-wrapper">
+                  <p>
+                    Though provision of alt text is a best practice, most
+                    digital images lack descriptions. A 2017 study of popular
+                    websites in many categories (as ranked by alexa.com) found
+                    that between 20% and 35% of images lacked descriptions, and
+                    that many images that did contain alt text had extremely
+                    low-quality descriptions, such as the word "image" or a
+                    filename [17]. Images on social media are particularly
+                    problematic; a 2018 study found that only 0.1% of images on
+                    Twitter had alt text [16]. While the ideal is for content
+                    authors to always provide high quality image descriptions
+                    (i.e. using the alt text field) at the time of document
+                    authorship, many are not despite efforts and resources
+                    developed to scaffold content authors in producing them
+                    (e.g., [13, 26]).
+                  </p>
+                </div>
+                <div id="s1_p3" class="paragraph-wrapper">
+                  <p>
+                    The absence of alt text from content authors has motivated
+                    scholars and practitioners to innovate, by introducing a
+                    variety of more scalable image description services that are
+                    powered by humans [4, 5, 7, 6, 45], computers [14, 24, 35,
+                    37, 38, 43], and a mixture of their efforts [17, 28, 32,
+                    33]. In designing image descriptions, such services can
+                    leverage the many guidelines for how to write effective
+                    descriptions [13, 11, 26, 29, 30, 34, 39, 41, 42, 44].
+                    However, existing guidelines are limited in that they do not
+                    clarify how to account for the finding of Petrie et al. [30]
+                    in 2005 – an interview study with five blind people that
+                    found that the most useful information to be included "was
+                    thought to be context dependent", i.e. based on the source
+                    in which the image is found.
+                  </p>
+                </div>
+                <div id="s1_p4" class="paragraph-wrapper">
+                  <img
+                    src="https://user-images.githubusercontent.com/37107066/120966207-e3793b80-c7a0-11eb-9a02-76537ba6b580.PNG"
+                  />
+                  <p id="s1_p4_f1" class="visual-desc">
+                    Figure 1. Examples of digital images that participants in
+                    our qualitative study encountered when browsing different
+                    sources. Participants wanted more information for all these
+                    images, particularly because none of the images had
+                    associated alt text.
+                  </p>
+                  <p>
+                    Towards the goal of closing this description gap between
+                    what people want and what is provided, we present a
+                    qualitative study designed to investigate the image
+                    description preferences of people who are BLV. We
+                    interviewed 28 BLV people, guided by the question: "What are
+                    BLV people’s experiences with and preferences for image
+                    descriptions found in different digital sources?". We draw
+                    on the following definition of source: the platforms and
+                    media where one may encounter digital images. Examples of
+                    digital images found in different sources are shown in
+                    Figure 1. We focused our investigation on seven sources:
+                    news websites, social networking sites/platforms, eCommerce
+                    websites, employment websites, online dating
+                    websites/platforms, productivity applications, and
+                    e-publications. We conclude with recommendations regarding
+                    what is important information to incorporate into image
+                    descriptions found in different sources. These
+                    recommendations can be of great value for improving
+                    human-powered, computer-powered, and hybrid image
+                    description services for people who are BLV. More generally,
+                    our work contributes to the design of social and technical
+                    infrastructures that are accessible to all and support
+                    people to engage more fully with digital media.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="info-container" class="container">
+            <div id="auto-card" class="card-container">
+              <div class="card-top">
+                <h3>0. Abstract</h3>
+                <div class="close-btn">
+                  <img src="images/add.svg" />
+                </div>
+              </div>
+              <div class="card-content">
+                <p>
+                  Access to digital images is important to people who are blind
+                  or have low vision (BLV) Many contemporary image description
+                  efforts do not take into account this population’s nuanced
+                  image description preferences. Study provides insight into 28
+                  BLV people's experiences with descriptions of digital images
+                  from news websites, social networking sites/platforms,
+                  eCommerce websites, employment websites, online dating
+                  websites, productivity applications, and e-publications. We
+                  provide recommendations for the development of next-generation
+                  image description technologies inspired by our empirical
+                  analysis.
+                </p>
+              </div>
+              <div class="card-edit">
+                <div class="edit-btn">
+                  edit
+                </div>
+              </div>
+              <div class="card-bottom">
+                <div class="model-list-container">
+                  <label for='model'>Model: </label>
+                  <div class="model-wrapper"><div>DistilBart</div></div>
+                </div>
+                <div class="length-container">
+                  <label for='length'>Length: </label>
+                  <div class="slidebar-wrapper">
+                    <input type="range" class="length-slidebar" min="0" max="2" step="1"/>
+                    <div class="slidebar-value-wrapper">
+                      <div align="left">short</div><div>medium</div><div align="right">long</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="add-card-btn" class="btn-container">
+              <div class="circle-btn" />
+                <img src="images/add.svg" />
+              </div>
+            </div>
+            <div id="add-popup" class="popup-container">
+              <div class="popup-content">
+                <div class="popup-title">
+                  Please enter section numbers to get.
+                </div>
+                <div class="popup-inputs">
+                  <div>
+                    <label for='begin'>Begin: </label>
+                    <input id="begin-input" type="text">
+                  </div>
+                  <div>
+                    <label for='end'>End: </label>
+                    <input id="end-input" type="text">
+                  </div>
+                </div>
+                <div class="popup-btns">
+                  <div class="cancel-btn">
+                    cancel
+                  </div>
+                  <div class="confirm-btn">
+                    ok
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
